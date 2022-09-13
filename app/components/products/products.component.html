@@ -1,0 +1,27 @@
+<div class="layout_padding gallery_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" *ngFor="let item of datas">
+                <div class="best_shoes">
+                    <a [routerLink]="['/detail',item.maMH]"><p class="best_text">{{item.tenMH}}</p></a>
+                    <a [routerLink]="['/detail',item.maMH]"><img src="{{item.hinhAnh}}" alt=""></a>
+                    <div class="star_text">
+                        <div class="left_part">
+                            <ul>
+                                <li><img src="./assets/images/star-icon.png"></li>
+                                <li><img src="./assets/images/star-icon.png"></li>
+                                <li><img src="./assets/images/star-icon.png"></li>
+                                <li><img src="./assets/images/star-icon.png"></li>
+                                <li><img src="./assets/images/star-icon.png"></li>
+                            </ul>
+                        </div>
+                        <div class="right_part">
+                            <div class="shoes_price">$ <span style="color: #ff4e5b;">{{item.donGia}}</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
